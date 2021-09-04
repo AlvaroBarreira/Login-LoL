@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Eventos formularios</title>
+</head>
+<body background="body.jpg">
+    
+
+
+
+    <div class="box">
+
+
+        <div class="icon-container">
+
+            <img src="icon.png" alt="" class="icon">
+            
+        </div>
+
+        <p class="ingresar"><b>Registrar</b></p>
+        
+
+        <form action="" class="form" autocomplete="off">
+
+            <div id="inp" class="inp" >
+                <label id="label" class="down"  for="">NOMBRE DE USUARIO</label>
+                <input type="text" class="ver" id="name" class="name" onmouseover="mouse(id)" onmouseout="mouseOut(id)" required> 
+            </div>
+            
+            <div id="inp2" class="inp">
+                <label id="label2" class="down" for="">EMAIL</label>
+                <input type="email" class="ver" id="email" onmouseover="mouse(id)" onmouseout="mouseOut(id)" required>
+                
+            </div>
+            
+            <div id="inp3" class="inp">
+                <label id="label3" class="down" for="">CONTRASEÑA</label>
+                <input type="password" class="ver" id="pass1" onmouseover="mouse(id)" onmouseout="mouseOut(id)"required>
+                <div id="alert" class="alert"><p class="alert-text">La contraseña debe tener al menos un numero</p></div>
+            </div>
+            
+            <div id="inp4" class="inp">
+                <label id="label4" class="down" for="">REPETIR CONTRASEÑA</label>
+                <input type="password" class="ver" id="pass2" onmouseover="mouse(id)" onmouseout="mouseOut(id)" required>
+                <div id="alert2" class="alert2"><p class="alert-text2">Las contraseñas deben coincidir</p></div>
+            </div>
+            
+            <div id="inp5" class="inp">
+                <label id="label5" class="down" for="">DEJANOS UN MENSAJE</label>
+                <input type="textarea" class="ver" id="message" onmouseover="mouse(id)" onmouseout="mouseOut(id)">
+            </div>
+            
+            <div id="inp6" class="inp">
+                <label id="label6" class="down" for="">NÚMERO DE TELÉFONO</label>
+                <input type="text" class="ver" id="phone" onmouseover="mouse(id)" onmouseout="mouseOut(id)" required>
+                <div id="alert3" class="alert3"><p class="alert-text3">Debe comenzar con un numero entre 1 y 4</p></div>
+            </div>
+            
+            <div id="inp7" class="inp">
+                <label id="label7" class="down" for="">ESCRIBA AQUÍ EL CODIGO DE ABAJO</label>
+                <input type="text" class="ver" id="captcha" onmouseover="mouse(id)" onmouseout="mouseOut(id)" required>
+            </div>
+            <label for="" id="label8" class="label8">Fv6eH2C</label>
+    
+            <button type="submit" id="button" class="button"><p class="content"></p></button>
+    
+        </form>
+
+    </div>
+
+
+    <a id="option" class="option"><i id="icon" class="fa fa-cog" aria-hidden="true"></i></a>
+
+    <script src="main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetAlert.js"></script>
+</body>
+</html>
