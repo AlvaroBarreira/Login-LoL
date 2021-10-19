@@ -6,60 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
     <title>Eventos formularios</title>
 </head>
-<body background="body.jpg">
+<body >
     
 
 
-
+    
     <div class="box">
 
 
-        <div class="icon-container">
-
-            <img src="icon.png" alt="" class="icon">
-            
-        </div>
-
-        <p class="ingresar"><b>Registrar</b></p>
+        
         
 
         <form action="" class="form" autocomplete="off">
 
+            <div class="icon-container">
+
+                <img src="icon.png" alt="" class="icon">
+                
+            </div>
+    
+            <p class="ingresar"><b>Registrar</b></p>
+            
             <div id="inp" class="inp" >
+                
                 <label id="label" class="down"  for="">NOMBRE DE USUARIO</label>
                 <input type="text" class="ver" id="name" class="name" onmouseover="mouse(id)" onmouseout="mouseOut(id)" required> 
+                <div id="correct5" class="correct"><img src="https://img.icons8.com/color/48/000000/checked--v4.png"/></div>
             </div>
             
             <div id="inp2" class="inp">
                 <label id="label2" class="down" for="">EMAIL</label>
-                <input type="email" class="ver" id="email" onmouseover="mouse(id)" onmouseout="mouseOut(id)" required>
-                
+                <input type="email" class="ver" id="email" onmouseover="mouse(id)" onmouseout="mouseOut(id)" onchange="verEmail(form.email.value)" required>
+                <div id="alert4" class="alert4"><p class="alert-text4">Ingrese un email correcto</p></div>
+                <img id="correct" class="correct" src="https://img.icons8.com/color/48/000000/checked--v4.png"/>
             </div>
+            
             
             <div id="inp3" class="inp">
+                <img class="see" src="https://img.icons8.com/ios-glyphs/50/000000/visible--v1.png" onclick="typeInp()" />
                 <label id="label3" class="down" for="">CONTRASEÑA</label>
-                <input type="password" class="ver" id="pass1" onmouseover="mouse(id)" onmouseout="mouseOut(id)"required>
+                <input type="password" class="ver" id="pass1" onmouseover="mouse(id)" onmouseout="mouseOut(id)" required>
                 <div id="alert" class="alert"><p class="alert-text">La contraseña debe tener al menos un numero</p></div>
+                <img id="correct2" class="correct" src="https://img.icons8.com/color/48/000000/checked--v4.png"/>
             </div>
             
+
             <div id="inp4" class="inp">
+                <img class="see" src="https://img.icons8.com/ios-glyphs/50/000000/visible--v1.png" onclick="typeInp2()" />
                 <label id="label4" class="down" for="">REPETIR CONTRASEÑA</label>
                 <input type="password" class="ver" id="pass2" onmouseover="mouse(id)" onmouseout="mouseOut(id)" required>
                 <div id="alert2" class="alert2"><p class="alert-text2">Las contraseñas deben coincidir</p></div>
-            </div>
-            
-            <div id="inp5" class="inp">
-                <label id="label5" class="down" for="">DEJANOS UN MENSAJE</label>
-                <input type="textarea" class="ver" id="message" onmouseover="mouse(id)" onmouseout="mouseOut(id)">
+                <img id="correct3" class="correct" src="https://img.icons8.com/color/48/000000/checked--v4.png"/>
             </div>
             
             <div id="inp6" class="inp">
                 <label id="label6" class="down" for="">NÚMERO DE TELÉFONO</label>
                 <input type="text" class="ver" id="phone" onmouseover="mouse(id)" onmouseout="mouseOut(id)" required>
                 <div id="alert3" class="alert3"><p class="alert-text3">Debe comenzar con un numero entre 1 y 4</p></div>
+                <img id="correct4" class="correct" src="https://img.icons8.com/color/48/000000/checked--v4.png"/>
             </div>
             
             <div id="inp7" class="inp">
@@ -68,14 +75,26 @@
             </div>
             <label for="" id="label8" class="label8">Fv6eH2C</label>
     
-            <button type="submit" id="button" class="button"><p class="content"></p></button>
+            <button type="" id="button" class="button"><p class="content"></p></button>
+
+            <div class="social-container">
+                <div class="card feb">
+                    <img class="feb-img" src="/icons8-facebook-rodeado-de-círculo (2).svg"/>
+                </div>
+                <div class="card goo">
+                    <img class="goo-img" src="https://img.icons8.com/color/48/000000/google-logo.png"/>
+                </div>
+                <div class="card app">
+                    <img class="app-img" src="/icons8-mac-os.svg"/>
+                   
+                </div>
+            </div>
     
         </form>
 
     </div>
+    <video src="/Aurelion Sol, the Star Forger _ Login Screen - League of Legends.mp4" autoplay muted class="all-container2" />
 
-
-    <a id="option" class="option"><i id="icon" class="fa fa-cog" aria-hidden="true"></i></a>
 
     <script src="main.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
